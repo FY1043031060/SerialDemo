@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
@@ -44,7 +45,9 @@ public:
     QVBoxLayout *verticalLayout;
     QComboBox *m_comboBox;
     QComboBox *m_itemComboBox;
+    QComboBox *m_parityComboBox;
     QPushButton *m_pushButton;
+    QCheckBox *m_timerCheckBox;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -114,10 +117,20 @@ public:
 
         verticalLayout->addWidget(m_itemComboBox);
 
+        m_parityComboBox = new QComboBox(centralWidget);
+        m_parityComboBox->setObjectName(QStringLiteral("m_parityComboBox"));
+
+        verticalLayout->addWidget(m_parityComboBox);
+
         m_pushButton = new QPushButton(centralWidget);
         m_pushButton->setObjectName(QStringLiteral("m_pushButton"));
 
         verticalLayout->addWidget(m_pushButton);
+
+        m_timerCheckBox = new QCheckBox(centralWidget);
+        m_timerCheckBox->setObjectName(QStringLiteral("m_timerCheckBox"));
+
+        verticalLayout->addWidget(m_timerCheckBox);
 
 
         horizontalLayout->addLayout(verticalLayout);
@@ -148,6 +161,7 @@ public:
         recvLabel->setText(QApplication::translate("XXXXClass", "RECV", 0));
         sendLabel->setText(QApplication::translate("XXXXClass", "SEND", 0));
         m_pushButton->setText(QApplication::translate("XXXXClass", "\345\217\221\351\200\201", 0));
+        m_timerCheckBox->setText(QApplication::translate("XXXXClass", "\345\256\232\346\227\266\345\217\221\351\200\201", 0));
     } // retranslateUi
 
 };

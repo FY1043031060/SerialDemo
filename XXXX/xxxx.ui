@@ -58,9 +58,19 @@
          <widget class="QComboBox" name="m_itemComboBox"/>
         </item>
         <item>
+         <widget class="QComboBox" name="m_parityComboBox"/>
+        </item>
+        <item>
          <widget class="QPushButton" name="m_pushButton">
           <property name="text">
            <string>发送</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="m_timerCheckBox">
+          <property name="text">
+           <string>定时发送</string>
           </property>
          </widget>
         </item>

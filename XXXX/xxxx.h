@@ -22,7 +22,7 @@ public:
     {
         ucArrTemp = (unsigned char*)malloc(ARR_SIZE);
         memset(ucArrTemp, 0, ARR_SIZE);
-        m_iCurrentIndex = 0;
+        m_iCurrentIndex = -1;
     }
 public:
     unsigned char* ucArrTemp;
@@ -55,8 +55,8 @@ public slots:
                 case RS422_ASYN5_PORT:
                 case RS422_ASYN6_PORT:
                 case RS422_SYN1_PORT:
-                case RS422_ASYN1_EXTRA_SERIAL:
-                case RS422_ASYN2_EXTRA_SERIAL:
+                case RS422_ASYN1_EXTRA_PORT:
+                case RS422_ASYN2_EXTRA_PORT:
                     ReadRS422Port((RS422_SERIAL_TYPE_T)m_iCurrentIndex, ucArrTemp, ARR_SIZE, &uiTemp);
                     break;
                 case CAN_PORT:
@@ -64,6 +64,8 @@ public slots:
                     break;
                 case ARINC429_PORT:
                     ReadARINC429Port((unsigned int*)ucArrTemp, ARR_SIZE / 4, &uiTemp);
+                    break;
+                default:
                     break;
             }
 
@@ -81,6 +83,7 @@ public slots:
     {
         this->m_iCurrentIndex = index;
     }
+
 };
 
 class XXXX : public QMainWindow
@@ -92,11 +95,14 @@ public:
     int initCombox();
     int initConnect();
     int initItemCombox();
-
+    int initParityCombox();
+protected:
+    void timerEvent(QTimerEvent *event);
 private slots:
     void onComboxChoosed(int index);
     void onSendButtonClicked();
     void onTextChanged(QString strTemp);
+    void onTimerCheckClicked(int iStatus);
 private:
     Ui::XXXXClass ui;
     RecvData* pRecvData;

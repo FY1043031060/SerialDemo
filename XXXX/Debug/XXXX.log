@@ -1,0 +1,46 @@
+﻿生成启动时间为 2016/9/27 22:41:15。
+     1>项目“C:\Users\FY\Desktop\XXXX\XXXX\XXXX.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\XXXX.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ComputeCustomBuildOutput:
+         正在创建目录“C:\Users\FY\Desktop\XXXX\XXXX\GeneratedFiles\Debug\”。
+       CustomBuild:
+         Moc'ing xxxx.h...
+         Qt: Untested Windows version 10.0 detected!
+         Uic'ing xxxx.ui...
+         Rcc'ing xxxx.qrc...
+         Qt: Untested Windows version 10.0 detected!
+     1>RCC : warning : No resources in 'C:\Users\FY\Desktop\XXXX\XXXX\xxxx.qrc'.
+         
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.4.2\5.4\msvc2010_opengl\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.4.2\5.4\msvc2010_opengl\include\QtCore /IC:\Qt\Qt5.4.2\5.4\msvc2010_opengl\include\QtGui /IC:\Qt\Qt5.4.2\5.4\msvc2010_opengl\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\Debug\moc_xxxx.cpp main.cpp xxxx.cpp
+         moc_xxxx.cpp
+         main.cpp
+         xxxx.cpp
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.4.2\5.4\msvc2010_opengl\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.4.2\5.4\msvc2010_opengl\include\QtCore /IC:\Qt\Qt5.4.2\5.4\msvc2010_opengl\include\QtGui /IC:\Qt\Qt5.4.2\5.4\msvc2010_opengl\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_xxxx.cpp
+         qrc_xxxx.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\FY\Desktop\XXXX\Win32\Debug\\XXXX.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.4.2\5.4\msvc2010_opengl\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib f2900_sdk.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\XXXX.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\FY\Desktop\XXXX\Win32\Debug\XXXX.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\FY\Desktop\XXXX\Win32\Debug\XXXX.lib" /MACHINE:X86 Debug\moc_xxxx.obj
+         Debug\qrc_xxxx.obj
+         Debug\main.obj
+         Debug\xxxx.obj
+            正在创建库 C:\Users\FY\Desktop\XXXX\Win32\Debug\XXXX.lib 和对象 C:\Users\FY\Desktop\XXXX\Win32\Debug\XXXX.exp
+     1>LINK : warning LNK4098: 默认库“LIBCMTD”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>f2900_sdk.lib(f2900_helper.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“f2900_sdk.lib(f2900_helper.obj)”或在“C:\Users\FY\Desktop\XXXX\Win32\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>f2900_sdk.lib(f2900_lib.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“f2900_sdk.lib(f2900_lib.obj)”或在“C:\Users\FY\Desktop\XXXX\Win32\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>f2900_sdk.lib(f2900_extra_lib.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“f2900_sdk.lib(f2900_extra_lib.obj)”或在“C:\Users\FY\Desktop\XXXX\Win32\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>f2900_sdk.lib(f2900_manager.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“f2900_sdk.lib(f2900_manager.obj)”或在“C:\Users\FY\Desktop\XXXX\Win32\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>f2900_sdk.lib(f2900_sdk.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“f2900_sdk.lib(f2900_sdk.obj)”或在“C:\Users\FY\Desktop\XXXX\Win32\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>f2900_sdk.lib(f2900_serial_manager.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“f2900_sdk.lib(f2900_serial_manager.obj)”或在“C:\Users\FY\Desktop\XXXX\Win32\Debug\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         XXXX.vcxproj -> C:\Users\FY\Desktop\XXXX\Win32\Debug\XXXX.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\FY\Desktop\XXXX\Win32\Debug\\XXXX.exe;#1" /manifest Debug\XXXX.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\XXXX.unsuccessfulbuild”。
+         正在对“Debug\XXXX.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\FY\Desktop\XXXX\XXXX\XXXX.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.79
